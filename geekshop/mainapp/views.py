@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 def products(request):
-    title = 'Продукты/каталог'
+    title = 'продукты/каталог'
     links_menu = [
         {'href': 'products_all', 'name': 'все'},
         {'href': 'products_home', 'name': 'дом'},

@@ -1,0 +1,21 @@
+[
+  {
+      "name": "office",
+      "description": "description"
+  },
+  {
+      "name": "home",
+      "description": "description"
+
+  },
+   {
+      "name": "modern",
+      "description": "description"
+  },
+  {
+      "name": "classic",
+      "description": "description"
+
+  }
+
+]

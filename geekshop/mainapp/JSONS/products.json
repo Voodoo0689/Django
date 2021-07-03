@@ -1,0 +1,32 @@
+[
+  {
+      "category": "office",
+      "name": "Стул",
+      "image": "product_images/product-4.jpg",
+      "short_desc": "red",
+      "description": "Отличный стул",
+      "price": "450.99",
+      "quantity": 5
+      
+    },
+  {
+      "category": "home",
+      "name": "Диван",
+      "image": "product_images/product-3-sm.jpg",
+      "short_desc": "Удобно",
+      "description": "Для всей семьи",
+      "price": "15000.00",
+      "quantity": 3
+
+    },
+  {
+      "category": "modern",
+      "name": "Люстра",
+      "image": "product_images/product-11.jpg",
+      "short_desc": "Ярко",
+      "description": "Хорошее освещение",
+      "price": "0.00",
+      "quantity": 0
+
+  }
+]

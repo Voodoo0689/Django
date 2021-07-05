@@ -1,21 +1,25 @@
 [
   {
-      "name": "office",
-      "description": "description"
+      "name": "Стулья",
+      "description": "Это супер стулья"
   },
   {
-      "name": "home",
-      "description": "description"
-
-  },
-   {
-      "name": "modern",
-      "description": "description"
+      "name": "Дом",
+      "description": ""
   },
   {
-      "name": "classic",
-      "description": "description"
 
+      "name": "Офис",
+      "description": ""
+  },
+  {
+      "name": "Модерн",
+      "description": "",
+      "created": "2021-06-25T21:45:41.825",
+      "updated": "2021-06-25T21:45:41.825"
+  },
+  {
+      "name": "Классика",
+      "description": ""
   }
-
 ]

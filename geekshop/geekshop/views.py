@@ -4,7 +4,7 @@ from mainapp.models import Product
 
 
 def index(request):
-    title = 'Магазин'
+    title = 'магазин'
 
     products = Product.objects.all()[:3]
 
@@ -12,12 +12,8 @@ def index(request):
         'title': title,
         'products': products,
     }
-    return render(request, 'geekshop/index.html', context)
+    return render(request, 'geekshop/index.html', context=context)
+
 
 def contacts(request):
-    title = 'Контакты'
-    context = {
-        'title': title
-    }
-    return render(request, 'geekshop/contact.html', context)
-
+    return render(request, 'geekshop/contact.html')

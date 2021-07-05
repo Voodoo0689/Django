@@ -1,7 +1,8 @@
-from django.contrib import auth
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.contrib import auth
 from django.urls import reverse
+
 from authapp.forms import ShopUserLoginForm, ShopUserEditForm, ShopUserRegisterForm
 
 
@@ -9,10 +10,12 @@ def login(request):
     title = 'вход'
 
     login_form = ShopUserLoginForm(data=request.POST)
+
     if request.method == 'POST' and login_form.is_valid():
         username = request.POST['username']
         password = request.POST['password']
-        user = auth.authenticate(username=username, password=password)
+
+        user =  auth.authenticate(username=username, password=password)
         if user and user.is_active:
             auth.login(request, user)
             return HttpResponseRedirect(reverse('index'))
@@ -27,7 +30,6 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return HttpResponseRedirect(reverse('index'))
-
 
 
 def register(request):
@@ -67,5 +69,3 @@ def edit(request):
     }
 
     return render(request, 'authapp/edit.html', context)
-
-# Create your views here.

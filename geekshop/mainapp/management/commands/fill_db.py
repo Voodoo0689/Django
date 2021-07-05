@@ -7,14 +7,13 @@ from django.core.management.base import BaseCommand
 from authapp.models import ShopUser
 from mainapp.models import ProductCategory, Product
 
-JSON_PATH = 'mainapp/JSONS'
+JSON_PATH = 'mainapp/jsons'
 
 
 def load_from_json(file_name):
     with open(os.path.join(JSON_PATH, file_name + '.json'), mode='r', encoding='UTF-8') as infile:
 
         return json.load(infile)
-
 
 
 class Command(BaseCommand):
@@ -36,4 +35,4 @@ class Command(BaseCommand):
             new_category = Product(**product)
             new_category.save()
 
-        super_user = ShopUser.objects.create_superuser(username='admin', password='123', age='31')
+        super_user = ShopUser.objects.create_superuser('admin', 'admin@geekshop.local', '123', age='30')
